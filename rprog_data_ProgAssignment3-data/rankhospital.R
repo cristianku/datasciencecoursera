@@ -33,15 +33,16 @@ rankhospital <- function(state, outcome, num = "best") {
         
         # filtering only the state from input
         good_state <- outcome_data$State == state
-        
         outcome_data <- outcome_data[good_state,]
         
         ## removing NA and filter
         good_cases <- complete.cases(outcome_data)
-        
         outcome_data  <- outcome_data [good_cases,]
         
+        ## ranking the data
+        #order by Hospital
         outcome_data_ordered  <- outcome_data[order(outcome_data[,1]) , ]   
+        #order by Deaths 
         outcome_data_ordered  <- outcome_data_ordered[order(outcome_data_ordered[,3]) , ]  
         
 
