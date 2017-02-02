@@ -13,10 +13,10 @@ pollutantmean <- function ( directory, pollutant, id = 1:332)  {
         
         dat <- data.frame()
         
-        for ( i in id)
+        for ( i in 1:length(id) )
         {
         
-                dat <- rbind(dat,read.csv(paste0(directory , "/" , sprintf("%03d",i), ".csv" ) ) )
+                dat <- rbind(dat,read.csv(paste0(directory , "/" , sprintf("%03d",id[i]), ".csv" ) ) )
         }
                 
         mean(dat[,pollutant], na.rm = TRUE)
