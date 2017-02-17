@@ -5,7 +5,7 @@ dbConnection <- dbConnect(MySQL(), user = "genome", host="genome-mysql.cse.ucsc.
 databases_list <- dbGetQuery(dbConnection, "show databases;")
 print(head(databases_list))
 
-
+#aaaaaaaaaaaaaaaaa
 
 # show tables list
 
