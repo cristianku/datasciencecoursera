@@ -50,14 +50,14 @@ json2[json2$full_name == "jtleek/datasharing",] # 2013-11-07T13:25:07Z
 # sqldf("select pwgtp1 from acs where AGEP < 50")
 # sqldf("select pwgtp1 from acs")
 # sqldf("select * from acs")
-
+detach("package:RMySQL", unload=TRUE)
 library(sqldf)
 
 # Using method = "curl" doesn't seem to work on Windows
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv", destfile = "./data/acs_wk2.csv")
 
 # Using method = "curl" on OS X works
-download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv", destfile = "./data/acs_wk2.csv", method = "curl")
+#download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv", destfile = "./data/acs_wk2.csv", method = "curl")
 
 acs <- read.csv("./data/acs_wk2.csv")
 head(acs)

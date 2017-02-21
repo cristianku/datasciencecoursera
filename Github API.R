@@ -23,7 +23,7 @@ stop_for_status(req)
 content(req)
 
 output <- content(req)
-list(output[[4]]$name, output[[4]]$created_at)
+print(list(output[[4]]$name, output[[4]]$created_at))
 
 # OR:
 #req <- with_config(gtoken, GET("https://api.github.com/rate_limit"))
