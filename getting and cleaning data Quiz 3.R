@@ -41,3 +41,13 @@ library(Hmisc)
 merge$RankGroups <- cut2(merge$Rank, g=5)
 table(merge$RankGroups, merge$`Income Group`)
 
+
+
+#                     High income: nonOECD High income: OECD Lower middle income Low income Upper middle income
+#[  1, 39)                    4                18                   5          0                  11
+#[ 39, 77)                    5                10                  13          1                   9
+#[ 77,115)                    8                 1                  12          9                   8
+#[115,154)                    5                 1                   8         16                   8
+#[154,190]                    1                 0                  16         11                   9
+
+
