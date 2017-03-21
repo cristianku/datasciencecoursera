@@ -6,7 +6,7 @@ head(pollution)
 library(datasets)
 with ( cars, plot ( speed, dist ))
 
-# LATTICE PLOT
+# LATTICE PLOT   ciao
 library(lattice)
 state <- data.frame(state.x77, region = state.region)
 xyplot(Life.Exp ~ Income | region, data = state, layout = c(4,1))
