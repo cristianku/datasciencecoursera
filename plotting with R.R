@@ -21,3 +21,8 @@ airquality <- transform(airquality, Month=factor(Month))
 boxplot(Ozone ~ Month, airquality , xlab = "Month", ylab = "Ozone (ppb ) ")
 
 
+# plotting parameters:
+
+#pch = the plotting sympol ( default is open circle)
+
+#lty
