@@ -1,17 +1,17 @@
 ## Execution
 ```R
-> source("~/exp-data/ExData_Plotting1/project/plot1.R")
+> source("~/exploatory/plot1.R")
 ```
-![](https://github.com/ashumeow/ExData_Plotting1/blob/master/project/plot1.png)
+![](https://github.com/cristianku/datasciencecoursera/blob/master/exploatory/plot1.png)
 ```R
-> source("~/exp-data/ExData_Plotting1/project/plot2.R")
+> source("~/exploatory/plot2.R")
 ```
-![](https://github.com/ashumeow/ExData_Plotting1/blob/master/project/plot2.png)
+![](https://github.com/cristianku/datasciencecoursera/blob/master/exploatory/plot2.png)
 ```R
-> source("~/exp-data/ExData_Plotting1/project/plot3.R")
+> source("~/exploatory/plot3.R")
 ```
-![](https://github.com/ashumeow/ExData_Plotting1/blob/master/project/plot3.png)
+![](https://github.com/cristianku/datasciencecoursera/blob/master/exploatory/plot3.png)
 ```R
-> source("~/exp-data/ExData_Plotting1/project/plot4.R")
+> source("~/exploatory/plot4.R")
 ```
-![](https://github.com/ashumeow/ExData_Plotting1/blob/master/project/plot4.png)
+![](https://github.com/cristianku/datasciencecoursera/blob/master/exploatory/plot4.png)
