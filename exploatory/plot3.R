@@ -1,5 +1,5 @@
 ## Getting full dataset
-ig <- read.csv("./exp-data/household_power_consumption.txt", header=T, sep=';', na.strings="?", 
+ig <- read.csv("./exploatory/household_power_consumption.txt", header=T, sep=';', na.strings="?", 
                nrows=2075259, check.names=F, stringsAsFactors=F, comment.char="", quote='\"')
 ig$Date <- as.Date(ig$Date, format="%d/%m/%Y")
 
@@ -22,5 +22,5 @@ legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2,
        legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 ## Saving to file
-dev.copy(png, file="./exp-data/ExData_Plotting1/project/plot3.png", height=480, width=480)
+dev.copy(png, file="./exploatory/plot3.png", height=480, width=480)
 dev.off()
